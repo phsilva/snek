@@ -1,6 +1,6 @@
 # snek toolchain
 #
-# VERSION               0.3
+# VERSION               0.4
 
 FROM debian:unstable
 
@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
     avr-libc \
     python3-serial \
     gcc-arm-none-eabi \
+    gcc-arm-linux-gnueabi \
     gcc-riscv64-unknown-elf \
     qemu-system-riscv32 \
     qemu-system-arm \
